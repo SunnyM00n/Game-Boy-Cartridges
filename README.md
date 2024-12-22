@@ -9,8 +9,8 @@ This is a repository listing all of my Game Boy game circuit board variants.
 | MBC1 (Type B)        | GB-4DV4S-01B       | 4 MB                   | 32 KB             | No                     | Type B (29F016, 29F032, 29F033) |
 | MBC3 (Type B)        | GB-4KV4S-01B       | 4 MB                   | 32 KB             | No                     | Type B (29F016, 29F032, 29F033) |
 | MBC5 (Type B)        | GB-4AV8S-01B       | 4 MB                   | 128 KB            | No                     | Type B (29F016, 29F032, 29F033) |
-| MBC3 Multicart       | GB-4KV8S-01B       | 4 MB (2x 2 MB, 4x 1MB) | 128 KB (4x 32 KB) | Yes                    | Type B (29F032, 29F033)         |
-| MBC5 Multicart       | GB-4AV8S-01B       | 4 MB (2x 2 MB, 4x 1MB) | 128 KB (4x 32 KB) | Yes                    | Type B (29F032, 29F033)         |
+| MBC3 Multicart       | GB-4KV8Q-01B       | 4 MB (2x 2 MB, 4x 1MB) | 128 KB (4x 32 KB) | Yes                    | Type B (29F032, 29F033)         |
+| MBC5 Multicart       | GB-4AV8Q-01B       | 4 MB (2x 2 MB, 4x 1MB) | 128 KB (4x 32 KB) | Yes                    | Type B (29F032, 29F033)         |
 | MBC1 (Type A)        | GB-2DV4S-01A       | 2 MB                   | 32 KB             | No                     | Type A (M29F160)                |
 | MBC3 (Type A)        | GB-2KV4S-01A       | 2 MB                   | 32 KB             | No                     | Type A (M29F160)                |
 | MBC5 (Type A)        | GB-2AV8S-01A       | 2 MB                   | 128 KB            | No                     | Type A (M29F160)                |
