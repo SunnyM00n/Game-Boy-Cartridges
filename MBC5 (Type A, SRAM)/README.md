@@ -103,15 +103,21 @@ After you assemble your game, you should measure the current out of the battery.
 
 To estimate battery life, see <a href="https://github.com/MouseBiteLabs/Game-Boy-MBC5-Cartridge/tree/main/Technical#estimating-battery-life">this section in the Technical Design Document</a>, or for more in-depth analysis, <a href="https://hackaday.io/project/11864-tritiled/log/72554-determining-maximum-runtime-176-to-202-years-cr2032">this Hackaday post</a>.
 
-### Why not FRAM?
+### Differences between FRAM and SRAM
 
-This board is only suitable for using SRAM. One downside to SRAM, if you haven't figured it out yet, is that you need a battery to keep the SRAM powered on even when the game is turned off. So eventually the battery will die, and your save data is lost. Some people have used FRAM, or Ferroelectric RAM, to keep save data around even after the battery dies (specifically, the popular part that's used for FRAM carts is the FM18W08). But, using this FRAM chip has a handful of downsides, and the benefit of keeping save data after the battery dies *in my opinion* does not outweigh the cons, which are as follows:
+This particular board is designed for using low retention power SRAM, or Static RAM. One downside to SRAM is that you need a battery to keep the SRAM powered on even when the game is turned off if you want to retain the data on the chip. So eventually the battery will die, and your save data will be lost.
 
-1) Quality, new stock, 5V tolerant FRAM is expensive ($12+ per part).
+The other popular option for holding save data is using FRAM, or Ferroelectric RAM, to keep save data around even after the battery dies (specifically, the popular part that's used for Game Boy FRAM carts is the FM18W08).
+
+So, why would anyone ever use SRAM over FRAM if FRAM doesn't need a battery? Well, they do come with a number of downsides:
+
+1) Quality, new stock, 5V tolerant FRAM is expensive ($12+ per part at the time of writing).
 2) Cheaper FRAM chips from eBay or Aliexpress are notoriously flaky (anecdotally, ~50% success rate).
 3) FRAM memory access requires different chip select timing than SRAM, and the Game Boy expects SRAM, so it is not natively compatible with FRAM carts. The Gameboy Color specifically cannot (easily) be made to properly access FM18W08 chip. You *can* use an OR gate and add the CLK on the cart edge to try to achieve the necessary timing, but it only works (properly) for DMG/MGB/SGB, not the GBC. It usually *works* in practice for GBC, but it's technically a datasheet violation and can potentially cause issues in edge cases. <a href="https://github.com/Gekkio">(Thanks to gekkio for pointing this out!)</a>
 
-Brand new SRAM chips are ~$3, and having the SRAM footprint also allows you to use SRAM from an original cart if desired. You will *easily* get more than a decade of life running on a battery. You're already assembling this cartridge; you can dump the save and replace the battery before then!
+In contrast, *brand new* quality SRAM chips are ~$3, and you can even save that by using the original SRAM from a donor cartridge if you want to. You will *easily* get more than a decade of life running on a battery. You're already assembling this cartridge; you can dump the save and replace the battery before then.
+
+<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/tree/main/MBC5%20(Type%20A%2C%20FRAM)">I do have an FRAM-enabled version of this cartridge,</a> if you're so inclined. They definitely have their place and their benefits. But I personally prefer the SRAM design because I refuse to use AliExpress FRAM chips, and don't want to add a big cost with new FRAM.
 
 ## Board Fitment
 
