@@ -119,7 +119,7 @@ After you assemble your game, you should measure the current out of the battery.
 
 **Note: You need to power up the game at least once before battery currents will make sense - the battery management ICs can start up in an unknown state before applying main power to the board.**
 
-To estimate battery life, see <a href="https://github.com/MouseBiteLabs/Game-Boy-MBC3-Cartridge/tree/main/Technical#estimating-battery-life">this section in the Technical Design Document</a>, or for more in-depth analysis, <a href="https://hackaday.io/project/11864-tritiled/log/72554-determining-maximum-runtime-176-to-202-years-cr2032">this Hackaday post</a>.
+To estimate battery life, see <a href="https://github.com/MouseBiteLabs/Game-Boy-MBC3-Cartridge/tree/main/Technical#estimating-battery-life">this section in the Technical Design Document of my first MBC3 board design</a>, or for more in-depth analysis, <a href="https://hackaday.io/project/11864-tritiled/log/72554-determining-maximum-runtime-176-to-202-years-cr2032">this Hackaday post</a>.
 
 ### Current Draw Measurements
 
@@ -173,7 +173,7 @@ Please carefully review the parts you need for the board you are trying to make.
 | R8                    | 10k                            | 0603             | Resistor           | x             | x                  | x                     | https://mou.sr/3riR7IH                           |
 | R9                    | 130k                           | 0603             | Resistor           |               |                    | x                     | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
 | R10                   | 49.9k                          | 0603             | Resistor           |               |                    | x                     | https://mou.sr/3Q3NRZO                           |
-| U1                    | 29F016, 29F032, 29F033         | TSOP-48, TSOP-40 | Flash EEPROM       | x             | x                  | x                     | AliExpress or eBay                               |
+| U1                    | M29F160                        | TSOP-48          | Flash EEPROM       | X             | X                                | X                                | [https://mou.sr/3N0a9eL](https://mou.sr/3N0a9eL) |
 | U2                    | MBC3                           | QFP-32           | MBC3 Mapper        | x             | x                  | x                     | Donor MBC3 Game Boy cartridge                    |
 | U3                    | AS6C6264, AS6C62256            | SOP-28           | SRAM               |               | x                  | x                     | [https://mou.sr/450klcY](https://mou.sr/450klcY) |
 | U4                    | MM1026, MM1134, BA6129, BA6735 | SOIC-8           | Battery Management |               | x                  |                       | Donor Game Boy cartridge                         |
