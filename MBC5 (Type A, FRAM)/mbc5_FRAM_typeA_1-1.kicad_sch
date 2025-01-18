@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "a2bfd7b6-7051-459f-ac89-69975017e43c")
 	(paper "A4")
+	(title_block
+		(title "Game Boy MBC5 Cartridge (FRAM, Type A)")
+		(date "2024-12-28")
+		(rev "1.1")
+		(company "Mouse Bite Labs")
+	)
 	(lib_symbols
 		(symbol "74xGxx:74LVC1G332"
 			(exclude_from_sim no)
@@ -3584,7 +3590,7 @@
 			"A_{5}" "A_{6}" "A_{7}" "A_{8}" "A_{9}" "A_{10}" "A_{11}" "A_{12}" "A_{13}"
 			"A_{14}" "A_{15}" "D_{0}" "D_{1}" "D_{2}" "D_{3}" "D_{4}" "D_{5}" "D_{6}"
 			"D_{7}" "RA_{14}" "RA_{15}" "RA_{16}" "RA_{17}" "RA_{18}" "RA_{19}" "RA_{20}"
-			"RA_{21}" "RA_{22}" "AA_{13}" "AA_{14}" "AA_{15}" "AA_{16}" "PHI"
+			"RA_{21}" "RA_{22}" "AA_{13}" "AA_{14}" "AA_{15}" "AA_{16}" "CLK"
 		)
 	)
 	(junction
@@ -7763,7 +7769,7 @@
 		)
 		(uuid "4d94b6fa-ed9f-44b6-a87b-f1dca0ae28ea")
 	)
-	(label "PHI"
+	(label "CLK"
 		(at 144.78 127 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7818,7 +7824,7 @@
 		)
 		(uuid "5bb6048e-3ac0-4b74-a92f-8d5754756444")
 	)
-	(label "PHI"
+	(label "CLK"
 		(at 35.56 34.29 180)
 		(fields_autoplaced yes)
 		(effects
