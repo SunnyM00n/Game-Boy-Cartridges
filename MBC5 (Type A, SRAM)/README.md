@@ -191,7 +191,7 @@ In contrast, *brand new* quality SRAM chips are ~$3, and you can even save that 
 - Add board number to board copper
 
 ### v1.0
-- Release revision
+- Initial revision
 
 ## Resources and Acknowledgements
 
