@@ -1,6 +1,12 @@
 # MBC5 (Type A, FRAM)
 
+This is an alternate design of my flashable MBC5-based cartridge for the Game Boy.
+
+**This MBC5 cartridge uses brand new M29F160 EEPROM chips and non-volatile FRAM.**
+
 ![image](https://github.com/user-attachments/assets/956db129-baf6-4564-b768-96c16d9fd2d5)
+
+All gerbers and source files can be found in this repo, as this project is fully open source. Technical documentation of the board can be found in the Technical folder.
 
 ## Board Characteristics and Order Information
 
