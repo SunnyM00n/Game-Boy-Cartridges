@@ -1,6 +1,6 @@
 # Game Boy Cartridge Circuit Boards
 
-This is a repository listing all of my Game Boy game circuit board variants.
+This is a repository listing all of my Game Boy game circuit board variants. <a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki">Also be sure to check out the wiki for more information.</a>
 
 ## Game Boy Board Links
 
