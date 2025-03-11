@@ -10,7 +10,7 @@ This circuit board should cover most, if not all, MBC1 games. The features are a
 - Compatibility with all four of the major Game Boy battery management ICs - MM1026, MM1134, BA6129, and BA6735
 - The option to add battery backup to the cartridge *without* the need of the original battery management ICs - perfect for MBC1 donors that didn't have batteries in them
 - Lower battery consumption compared to some of the original cartridges
-- Fully compatible with both the <a href="https://www.gbxcart.com/">GBxCart RW</a> and sanni's <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR)</a> so you can transfer games and save files to and from the board
+- Fully compatible with the <a href="https://www.gbxcart.com/">GBxCart RW</a> so you can transfer games and save files to and from the board
 
 ![image](https://github.com/user-attachments/assets/fb456978-95b1-4a29-8648-7040d88fbd3b)
 
@@ -52,8 +52,7 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 The EEPROM on the board needs to be programmed somehow. There are a few options for doing this:
 
 1) <a href="https://www.gbxcart.com/">**GBxCart**</a>. This is a perfect option if you want an easy way to make Game Boy cartridges without a lot of extra effort. This is a standalone flasher that plugs into your computer via USB. The cartridge circuit board is fully compatible with it, and it makes reflashing games extremely easy using <a href="https://github.com/lesserkuma/FlashGBX">lesserkuma's FlashGBX software</a>.
-2) <a href="https://github.com/sanni/cartreader">**OSCR**</a> by sanni. This is the Open Source Cart Reader, capable of making backups of both the ROM and RAM contents of cartridges across many different systems - like the NES, SNES, Genesis, and of course Game Boy and Game Boy Advance. And you can also use it to flash these Game Boy cartridges. The OSCR however requires assembly (or someone to assemble it for you) and is a bit more cumbersome to interface with on a PC, but it's an extremely powerful tool that I can't recommend enough if you want to expand past Game Boys.
-3) At the lowest level, you can buy an EEPROM programmer with a TSOP chip programming adapter. The downside to this method is that you have to desolder the chip every time you want to program it. The <a href="https://flashcatusb.com/">FlashcatUSB</a> is one popular option in retro spaces, but I use the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a>.
+2) At the lowest level, you can buy an EEPROM programmer with a TSOP chip programming adapter. The downside to this method is that you have to desolder the chip every time you want to program it. The <a href="https://flashcatusb.com/">FlashcatUSB</a> is one popular option in retro spaces, but I use the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a>.
 
 ### How to Program the Cartridges
 
@@ -109,7 +108,7 @@ On the back of the board are five test points. Here's where they are connected:
 - TP4: Ground
 - TP5: VCC input voltage
 
-After you assemble your game, you should measure the current out of the battery. But first, you should program it with the GBxCart or the OSCR, or if you programmed the EEPROM separately, put it into a Game Boy and cycle power once. Then, flip the PCB upside down on a non-conductive surface (not your leg), and set your multimeter in DC millivolts (or volts). Put the positive probe on TP3 and the negative probe on TP2. If you used a 10kΩ for R1, as indicated in the BOM, you should read a voltage in the single of millivolts. If you have something much higher, especially voltages above 20mV, then you likely have an issue or short circuit on the board somewhere.
+After you assemble your game, you should measure the current out of the battery. But first, you should program it with the GBxCart, or if you programmed the EEPROM separately, put it into a Game Boy and cycle power once. Then, flip the PCB upside down on a non-conductive surface (not your leg), and set your multimeter in DC millivolts (or volts). Put the positive probe on TP3 and the negative probe on TP2. If you used a 10kΩ for R1, as indicated in the BOM, you should read a voltage in the single of millivolts. If you have something much higher, especially voltages above 20mV, then you likely have an issue or short circuit on the board somewhere.
 
 **Note: You need to power up the game at least once before battery currents will make sense - the battery management ICs can start up in an unknown state before applying main power to the board.**
 
@@ -209,7 +208,6 @@ FRAM carts definitely have their place and their benefits. But I personally pref
 - <a href="https://wiki.tauwasser.eu/view/MBC1">Tauwasser's Wiki</a>
 - <a href="https://www.gbxcart.com/">insideGadgets discord server for GBxCart RW compatibility requirements</a>
 - <a href="https://github.com/lesserkuma/FlashGBX">Lesserkuma's FlashGBX software</a>
-- <a href="https://github.com/sanni/cartreader">sanni's Open Source Cart Reader (OSCR)</a>, and thanks to the OSCR discord server for help and feedback
 - <a href="https://www.alldatasheet.com/datasheet-pdf/pdf/99104/MITSUBISHI/MM1026.html">System Reset IC Datasheet</a>
 - <a href="https://www.ti.com/lit/ds/symlink/tps3613-01.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1698238885366&ref_url=https%253A%252F%252Feu.mouser.com%252F">TPS3613 Datasheet</a>
 - Board outline modified from <a href="https://tinkerer.us/projects/homebrew-gameboy-cartridge.html">Dillon Nichols's Homebrew Gameboy Cartridge project</a>
