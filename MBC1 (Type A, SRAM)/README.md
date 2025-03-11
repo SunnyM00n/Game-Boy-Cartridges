@@ -1,7 +1,5 @@
 # Game Boy MBC1 Cartridge - Type A, SRAM
 
-# UNDER CONSTRUCTION
-
 This is an updated design of my flashable MBC1-based cartridge for the Game Boy. The MBC1 mapper was used in many of the earlier Game Boy games, such as the Super Mario Land series, the Donkey Kong Land series, Metroid II, and one of my personal favorites - the original Link's Awakening. 
 
 **This MBC1 cartridge uses brand new M29F160 EEPROM chips and battery-backed SRAM.**
@@ -14,9 +12,7 @@ This circuit board should cover most, if not all, MBC1 games. The features are a
 - Lower battery consumption compared to some of the original cartridges
 - Fully compatible with both the <a href="https://www.gbxcart.com/">GBxCart RW</a> and sanni's <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR)</a> so you can transfer games and save files to and from the board
 
-(assembled picture)
-
-(board scan picture)
+![image](https://github.com/user-attachments/assets/fb456978-95b1-4a29-8648-7040d88fbd3b)
 
 All gerbers and source files can be found in this repo, as this project is fully open source. Technical documentation of the board can be found in the Technical folder.
 
@@ -41,13 +37,15 @@ The zipped folder contains all the gerber files for this board. The following op
 
 **I sell this blank circuit board on Etsy, so you don't have to buy a bunch of multiples if you don't want to.** (Click the banner!)
 
+(Not yet available - this is a placeholder.)
+
 <a href="https://mousebitelabs.etsy.com"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
 
 You can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go twoards future PCB orders of my own):
 
-<a href="https://www.pcbway.com/"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
+<a href="https://www.pcbway.com/project/shareproject/Game_Boy_MBC1_Cartridge_M29F160_SRAM_d0423337.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
-<a href="https://oshpark.com/">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
+<a href="https://oshpark.com/shared_projects/dfxoum1d">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
 
 ## Required Equipment
 
@@ -56,6 +54,10 @@ The EEPROM on the board needs to be programmed somehow. There are a few options 
 1) <a href="https://www.gbxcart.com/">**GBxCart**</a>. This is a perfect option if you want an easy way to make Game Boy cartridges without a lot of extra effort. This is a standalone flasher that plugs into your computer via USB. The cartridge circuit board is fully compatible with it, and it makes reflashing games extremely easy using <a href="https://github.com/lesserkuma/FlashGBX">lesserkuma's FlashGBX software</a>.
 2) <a href="https://github.com/sanni/cartreader">**OSCR**</a> by sanni. This is the Open Source Cart Reader, capable of making backups of both the ROM and RAM contents of cartridges across many different systems - like the NES, SNES, Genesis, and of course Game Boy and Game Boy Advance. And you can also use it to flash these Game Boy cartridges. The OSCR however requires assembly (or someone to assemble it for you) and is a bit more cumbersome to interface with on a PC, but it's an extremely powerful tool that I can't recommend enough if you want to expand past Game Boys.
 3) At the lowest level, you can buy an EEPROM programmer with a TSOP chip programming adapter. The downside to this method is that you have to desolder the chip every time you want to program it. The <a href="https://flashcatusb.com/">FlashcatUSB</a> is one popular option in retro spaces, but I use the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a>.
+
+### How to Program the Cartridges
+
+<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki">Check out the wiki for more information.</a>
 
 ## Battery Safety
 
@@ -69,7 +71,7 @@ If you're assembling these boards with a hot plate or hot air, *do not* solder t
 
 The board comes with four sets of jumper pads for solder bridges. SJ1 and SJ2 require you to solder bridge the middle pad either to the top pad or the bottom pad. SJ3 and SJ4 are configured by either leaving them alone or bridging them with solder. Here are the situations where you need to add solder bridges.
 
-### RAM Size Selection (SJ1 and SJ2, or SW1)
+### RAM Size Selection (SJ1/SJ2, or SW1)
 
 These two sets of pads are labelled "RAM SIZE" in the middle of the board. Soldering them will configure the max RAM *and* ROM size. You must configure these pads for every game you make - do not leave them empty (if you have no SRAM, solder to the "64K" setting to maximize ROM space). <a href="https://catskull.net/gb-rom-database/">You can find a list of games here with their respective ROM and RAM sizes.</a>
 
@@ -87,9 +89,15 @@ These two sets of pads are labelled "RAM SIZE" in the middle of the board. Solde
 
 Bridge the jumper SJ3 if you have either an MM1134 or BA6735 for U4, specifically. Any other battery management IC must leave SJ3 unsoldered.
 
-### Making Games Without RAM (SJ4)
+### Making Games Without RAM (SJ1/SJ2, SJ4)
 
 If your game does not have RAM on it (and therefore, you don't need the battery management IC U4), bridge SJ4 with solder. **Do not** bridge SJ4 if you are using U5 (TPS3613) instead of U4.
+
+You also should solder the SRAM size selection to the 64K setting.
+
+### Example Configurations
+
+<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki/MBC1">Check out the wiki for some pictures of boards in various configurations.</a>
 
 ## Test Points and Final Checkout
 
@@ -135,8 +143,8 @@ Please carefully review the parts you need for the board you are trying to make.
 | R1                    | 10k                            | 0603             | Resistor           |               | x                                | x                                | x                                | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R3                    | 49.9k                          | 0603             | Resistor           |               | x                                | x                                | x                                | https://mou.sr/3Q3NRZO                           |
 | R4                    | 49.9k                          | 0603             | Resistor           |               | x                                | x                                | x                                | https://mou.sr/3Q3NRZO                           |
-| R5                    | 49.9k                          | 0603             | Resistor           | x             | x                                | x                                | x                                | https://mou.sr/3Q3NRZO                           |
-| R6                    | 49.9k                          | 0603             | Resistor           | x             | x                                | x                                | x                                | https://mou.sr/3Q3NRZO                           |
+| R5                    | 49.9k                          | 0603             | Resistor           |               | x                                | x                                | x                                | https://mou.sr/3Q3NRZO                           |
+| R6                    | 49.9k                          | 0603             | Resistor           |               | x                                | x                                | x                                | https://mou.sr/3Q3NRZO                           |
 | R7                    | 10k                            | 0603             | Resistor           |               |                                  | x                                |                                  | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R9                    | 130k                           | 0603             | Resistor           |               |                                  |                                  | x                                | https://mou.sr/3MjXliy                           |
 | R10                   | 49.9k                          | 0603             | Resistor           |               |                                  |                                  | x                                | https://mou.sr/3Q3NRZO                           |
