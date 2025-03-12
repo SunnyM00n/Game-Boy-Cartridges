@@ -1,7 +1,5 @@
 # Game Boy MBC5 Cartridge - Type A, SRAM
 
-# UNDER CONSTRUCTION
-
 This is an updated design of my flashable MBC5-based cartridge for the Game Boy. The MBC5 mapper greatly augments the memory access of the Game Boy for larger games. Most of the games that came out in the last years of the Game Boy and Game Boy Color used the MBC5 mapper.
 
 **This MBC5 cartridge uses brand new M29F160 EEPROM chips and battery-backed SRAM.**
@@ -13,11 +11,9 @@ This circuit board should cover most MBC5 games. The features are as follows:
 - The option to add battery backup to the cartridge *without* the need of the original battery management ICs - perfect for MBC5 donors that didn't have batteries in them
 - Fully compatible with both the <a href="https://www.gbxcart.com/">GBxCart RW</a> and sanni's <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR)</a> so you can transfer games and save files to and from the board
 
-(assembled picture)
+![image](https://github.com/user-attachments/assets/757c7675-5381-433f-9f70-53d1241c55a8)
 
-(board scan picture)
-
-All gerbers and source files can be found in this repo, as this project is fully open source. Technical documentation of the board can be found in the Technical folder.
+All gerbers and source files can be found in this repo, as this project is fully open source **with attribution.**
 
 ## Important Things Before You Start
 
@@ -40,6 +36,8 @@ The zipped folder contains all the gerber files for this board. The following op
 
 **I sell this blank circuit board on Etsy, so you don't have to buy a bunch of multiples if you don't want to.** (Click the banner!)
 
+(Not yet available - this is a placeholder.)
+
 <a href="https://mousebitelabs.etsy.com"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
 
 You can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go towards future PCB orders of my own):
@@ -55,6 +53,10 @@ The EEPROM on the board needs to be programmed somehow. There are a few options 
 1) <a href="https://www.gbxcart.com/">**GBxCart**</a>. This is a perfect option if you want an easy way to make Game Boy cartridges without a lot of extra effort. This is a standalone flasher that plugs into your computer via USB. The cartridge circuit board is fully compatible with it, and it makes reflashing games extremely easy using <a href="https://github.com/lesserkuma/FlashGBX">lesserkuma's FlashGBX software</a>.
 2) <a href="https://github.com/sanni/cartreader">**OSCR**</a> by sanni. This is the Open Source Cart Reader, capable of making backups of both the ROM and RAM contents of cartridges across many different systems - like the NES, SNES, Genesis, and of course Game Boy and Game Boy Advance. And you can also use it to flash these Game Boy cartridges. The OSCR however requires assembly (or someone to assemble it for you) and is a bit more cumbersome to interface with on a PC, but it's an extremely powerful tool that I can't recommend enough if you want to expand past Game Boys.
 3) At the lowest level, you can buy an EEPROM programmer with a TSOP chip programming adapter. The downside to this method is that you have to desolder the chip every time you want to program it. The <a href="https://flashcatusb.com/">FlashcatUSB</a> is one popular option in retro spaces, but I use the <a href="https://xgecu.myshopify.com/products/xgecu-new-t48-tl866-3gprogrammer-v12-01-support-28000-ics-for-spi-nor-nand-flash-emmc-bga153-162-169-100-221-tsop-sop-plcc">T48 programmer</a> with the <a href="https://xgecu.myshopify.com/products/100-original-xgecu-adp_f48_ex-1-tsop48-special-adapter-for-nor-flash-only-use-on-t48-tl866-3g-programmer">TSOP48 adapter</a>.
+
+### How to Program the Cartridges
+
+<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki">Check out the wiki for more information.</a>
 
 ## Battery Safety
 
@@ -86,6 +88,10 @@ Note that you can make games that only require 64 Kbit of RAM and still use a 25
 ### Using an MM1134 or BA6735 for U4 (SJ3)
 
 Bridge the jumper SJ3 if you have either an MM1134 or BA6735 for U4, specifically. Any other battery management IC must leave SJ3 unsoldered.
+
+### Example Configurations
+
+<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki/MBC5">Check out the wiki for some pictures of boards in various configurations.</a>
 
 ## Test Points and Final Checkout
 
