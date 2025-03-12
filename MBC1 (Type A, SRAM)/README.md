@@ -14,7 +14,7 @@ This circuit board should cover most, if not all, MBC1 games. The features are a
 
 ![image](https://github.com/user-attachments/assets/fb456978-95b1-4a29-8648-7040d88fbd3b)
 
-All gerbers and source files can be found in this repo, as this project is fully open source.
+All gerbers and source files can be found in this repo, as this project is fully open source **with attribution**.
 
 ## Important Things Before You Start
 
