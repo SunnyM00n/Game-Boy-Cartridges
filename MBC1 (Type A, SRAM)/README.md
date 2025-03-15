@@ -70,7 +70,7 @@ If you're assembling these boards with a hot plate or hot air, *do not* solder t
 
 The board comes with four sets of jumper pads for solder bridges. SJ1 and SJ2 require you to solder bridge the middle pad either to the top pad or the bottom pad. SJ3 and SJ4 are configured by either leaving them alone or bridging them with solder. Here are the situations where you need to add solder bridges.
 
-<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki/MBC1">You can check out the wiki for some pictures of boards in various configurations to follow along with.</a>
+**<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki/MBC1">You can check out the wiki for some pictures of boards in various configurations to follow along with.</a>**
 
 ### RAM Size Selection (SJ1/SJ2, or SW1)
 
