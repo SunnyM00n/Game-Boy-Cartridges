@@ -66,6 +66,8 @@ If you're assembling these boards with a hot plate or hot air, *do not* solder t
 
 The board comes with five sets of jumper pads for solder bridges. SJ3, SJ5, and SJ6 require you to solder bridge the middle pad either to the left or right pads. SJ1 and SJ4 are configured by either leaving them alone or bridging them with solder. Here are the situations where you need to add solder bridges.
 
+<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki/MBC3">You can check out the wiki for some pictures of boards in various configurations to follow along with.</a>
+
 ### Making Games Without SRAM or Battery (SJ1 and SJ4)
 
 Solder bridge SJ1 and SJ4 if your game does not use any SRAM or battery. I don't believe there were ever any MBC3 games made *without* SRAM, but if you wanted to... remove it for some reason, you can.
@@ -99,10 +101,6 @@ Note that you can make games that only require 64 Kbit of RAM and still use a 25
 If your game does *not* use the RTC function with the crystal X1, then you need to bridge the pads of Z1.
 
 ![image](https://github.com/MouseBiteLabs/Game-Boy-MBC3-Cartridge/assets/97127539/d46ea632-6318-4e5d-bf40-c4e9a7f52aa1)
-
-### Example Configurations
-
-<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki/MBC3">Check out the wiki for some pictures of boards in various configurations.</a>
 
 ## Test Points and Final Checkout
 
