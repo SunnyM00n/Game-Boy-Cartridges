@@ -70,6 +70,8 @@ If you're assembling these boards with a hot plate or hot air, *do not* solder t
 
 The board comes with three sets of jumper pads for solder bridges. SJ1 and SJ2 require you to solder bridge the middle pad either to the left or right pads. SJ3 is configured by either leaving the pads unsoldered or bridging them with solder. Here are the situations where you need to add solder bridges.
 
+**<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki/MBC5">You can check out the wiki for some pictures of boards in various configurations to follow along with.</a>**
+
 ### RAM Size Selection (SJ1 and SJ2, or SW1)
 
 These jumpers are located underneath the MBC5 chip, and labeled "64K" and "256K/1M". Solder them to configure the amount of RAM your cart uses. You must configure these pads for every game you make, unless you do not need RAM. <a href="https://catskull.net/gb-rom-database/">You can find a list of games here with their respective RAM sizes.</a>
@@ -88,10 +90,6 @@ Note that you can make games that only require 64 Kbit of RAM and still use a 25
 ### Using an MM1134 or BA6735 for U4 (SJ3)
 
 Bridge the jumper SJ3 if you have either an MM1134 or BA6735 for U4, specifically. Any other battery management IC must leave SJ3 unsoldered.
-
-### Example Configurations
-
-<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki/MBC5">Check out the wiki for some pictures of boards in various configurations.</a>
 
 ## Test Points and Final Checkout
 
