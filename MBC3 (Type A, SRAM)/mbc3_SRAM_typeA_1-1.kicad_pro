@@ -445,7 +445,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "mbc3_SRAM_typeA_1-0.kicad_pro",
+    "filename": "mbc3_SRAM_typeA_1-1.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -497,7 +497,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "mbc3_SRAM_typeA_1-0_GERBERS/",
+      "plot": "mbc3_SRAM_typeA_1-1_GERBERS/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
