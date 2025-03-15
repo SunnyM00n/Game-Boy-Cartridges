@@ -70,6 +70,8 @@ If you're assembling these boards with a hot plate or hot air, *do not* solder t
 
 The board comes with four sets of jumper pads for solder bridges. SJ1 and SJ2 require you to solder bridge the middle pad either to the top pad or the bottom pad. SJ3 and SJ4 are configured by either leaving them alone or bridging them with solder. Here are the situations where you need to add solder bridges.
 
+<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki/MBC1">You can check out the wiki for some pictures of boards in various configurations to follow along with.</a>
+
 ### RAM Size Selection (SJ1/SJ2, or SW1)
 
 These two sets of pads are labelled "RAM SIZE" in the middle of the board. Soldering them will configure the max RAM *and* ROM size. You must configure these pads for every game you make - do not leave them empty (if you have no SRAM, solder to the "64K" setting to maximize ROM space). <a href="https://catskull.net/gb-rom-database/">You can find a list of games here with their respective ROM and RAM sizes.</a>
@@ -93,10 +95,6 @@ Bridge the jumper SJ3 if you have either an MM1134 or BA6735 for U4, specificall
 If your game does not have RAM on it (and therefore, you don't need the battery management IC U4), bridge SJ4 with solder. **Do not** bridge SJ4 if you are using U5 (TPS3613) instead of U4.
 
 You also should solder the SRAM size selection to the 64K setting.
-
-### Example Configurations
-
-<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki/MBC1">Check out the wiki for some pictures of boards in various configurations.</a>
 
 ## Test Points and Final Checkout
 
