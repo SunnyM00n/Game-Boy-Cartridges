@@ -1,7 +1,5 @@
 # Game Boy MBC3 Cartridge - Type A, SRAM
 
-# UNDER CONSTRUCTION
-
 This is an updated design of my flashable MBC3-based cartridge for the Game Boy. The MBC3 mapper improves a lot over the MBC1, and includes a real-time clock for everyone's favorite battery-sucking game.... Mary Kate and Ashley Pocket Planner! Oh, and Pokemon.
 
 **This MBC3 cartridge uses brand new M29F160 EEPROM chips and battery-backed SRAM.**
