@@ -13,11 +13,9 @@ This circuit board should cover most, if not all, MBC3 games. The features are a
 - The option to add battery backup to the cartridge *without* the need of the original battery management ICs
 - Fully compatible with both the <a href="https://www.gbxcart.com/">GBxCart RW</a> and sanni's <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR)</a> so you can transfer games and save files to and from the board
 
-(assembled picture)
+![image](https://github.com/user-attachments/assets/dd82107d-8d8f-4bd8-a9ea-bfb0f0ed4435)
 
-(board scan picture)
-
-All gerbers and source files can be found in this repo, as this project is fully open source. Technical documentation of the board can be found in the Technical folder.
+All gerbers and source files can be found in this repo, as this project is fully open source.
 
 ## Important Things Before You Start
 
@@ -38,17 +36,17 @@ The zipped folder contains all the gerber files for this board. The following op
 - Surface Finish: ENIG
 - Gold Fingers: Yes, 30° chamfer
 
-**Add this note to orders:** "The milling.gbr layer indicates where an unplated slot should be added to the board. Please add an unplated slot as indicated."
-
 **I sell this blank circuit board on Etsy, so you don't have to buy a bunch of multiples if you don't want to.** (Click the banner!)
+
+(Not yet available - this is a placeholder.)
 
 <a href="https://mousebitelabs.etsy.com"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
 
 You can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go twoards future PCB orders of my own):
 
-<a href="https://www.pcbway.com/"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
+<a href="https://www.pcbway.com/project/shareproject/Game_Boy_MBC3_Cartridge_M29F160_SRAM_6fc0c16b.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
-<a href="https://oshpark.com/">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
+<a href="https://oshpark.com/shared_projects/ahA0HcIn">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
 
 ## Required Equipment
 
@@ -79,10 +77,9 @@ Solder bridge SJ1 and SJ4 if your game does not use any SRAM or battery. I don't
 The MBC3 chip you use from the donor cartridge can be one of a few different types:
 
 - If your MBC3 doesn't have a revision letter on it (it just says "MBC3" on it) then bridge the middle pad of SJ3 to the left. (You will also need to populate Q1!)
-  - If you're using a revision-less MBC3, and are making a game that requires a battery, you should use a donor MM1026, MM1134, BA6129, or BA6735 battery management IC instead of the replacement TPS3613.
 - If your MBC3 *does* have a revision letter, such as MBC3A or MBC3B, then bridge the middle pad of SJ3 to the right.
 
-![image](https://github.com/MouseBiteLabs/Game-Boy-MBC3-Cartridge/assets/97127539/24aaa7eb-fbc7-428d-955a-e1005c491098)
+![image](https://github.com/user-attachments/assets/6c26547f-eecb-4edb-84ed-a50d2ca8632d)
 
 *[Images of MBC3 chips from <a href="https://gbhwdb.gekkio.fi/cartridges/mbc3.html">Game Boy Hardware Database</a>.]*
 
@@ -104,6 +101,10 @@ Note that you can make games that only require 64 Kbit of RAM and still use a 25
 If your game does *not* use the RTC function with the crystal X1, then you need to bridge the pads of Z1.
 
 ![image](https://github.com/MouseBiteLabs/Game-Boy-MBC3-Cartridge/assets/97127539/d46ea632-6318-4e5d-bf40-c4e9a7f52aa1)
+
+### Example Configurations
+
+<a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/wiki/MBC3">Check out the wiki for some pictures of boards in various configurations.</a>
 
 ## Test Points and Final Checkout
 
@@ -223,6 +224,9 @@ In contrast, *brand new* quality SRAM chips are ~$3, and you can even save that 
 <a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/tree/main/MBC3%20(Type%20A%2C%20FRAM)">I do have an FRAM-enabled version of this cartridge,</a> if you're so inclined. They definitely have their place and their benefits. But I personally prefer the SRAM design because I refuse to use AliExpress FRAM chips, and don't want to add a big cost with new FRAM.
 
 ## Revision History
+
+### v1.1
+- Updated silkscreen for consistency with other carts
 
 ### v1.0
 - Release revision
