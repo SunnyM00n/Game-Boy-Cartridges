@@ -971,6 +971,17 @@
 			(thermal_bridge_angle 0)
 			(uuid "3b7fabee-0d65-46fa-aee8-c32fb2b559f4")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-28W_7.5x17.9mm_P1.27mm.wrl"
+			(offset
+				(xyz 0.6 0 0)
+			)
+			(scale
+				(xyz 1.1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
+		)
 	)
 	(footprint "Bucketmouse:QFP-32"
 		(layer "F.Cu")
@@ -1883,6 +1894,17 @@
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
 			(uuid "6200ec4c-64c8-4407-b185-0d16613d1aff")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-32_7x7mm_P0.8mm.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
 		)
 	)
 	(footprint "Bucketmouse:R_0603_1608Metric_Boxed"
@@ -5561,7 +5583,7 @@
 			)
 		)
 		(property "Value" "M29F160N"
-			(at 0 6.95 -90)
+			(at 0 6.95 90)
 			(layer "F.Fab")
 			(uuid "39fd4c8d-02e2-422f-b3ae-c0c4ab9b4b05")
 			(effects
@@ -5779,7 +5801,7 @@
 			(uuid "ad8efe9b-272f-41ea-b2dc-81c04e918494")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 -90)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "1e2d0d62-ced8-48f2-8c7c-4fc3e4defc07")
 			(effects
@@ -6269,7 +6291,7 @@
 			(pintype "input")
 			(uuid "26e917c2-6451-4241-85bd-88c271c27f04")
 		)
-		(model "${KICAD7_3DMODEL_DIR}/Gekkio_Package_SO.3dshapes/TSOP-I-48_18.4x12mm_P0.5mm.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/TSOP-I-48_12x18.4mm_P0.5mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
