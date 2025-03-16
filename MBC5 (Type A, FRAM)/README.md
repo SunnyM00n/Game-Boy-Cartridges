@@ -1,6 +1,6 @@
 # MBC5 (Type A, FRAM)
 
-This is an alternate design of my <a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/tree/main/MBC5%20(Type%20A%2C%20SRAM)">flashable MBC5-based cartridge for the Game Boy</a>. This board uses non-volatile FRAM instead of SRAM to hold save data.
+This is an alternate design of my <a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/tree/main/MBC5%20(Type%20A%2C%20SRAM)">flashable MBC5-based cartridge for the Game Boy</a>. This board uses non-volatile FRAM instead of SRAM to hold save data. I made this specifically for use with the <a href="https://github.com/MouseBiteLabs/Super-Game-Boy-Plus/tree/main">Super Game Boy Plus boards.</a>
 
 **This MBC5 cartridge uses brand new M29F160 EEPROM chips and non-volatile FRAM.**
 
