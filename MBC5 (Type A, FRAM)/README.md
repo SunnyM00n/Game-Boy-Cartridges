@@ -4,7 +4,7 @@ This is an alternate design of my <a href="https://github.com/MouseBiteLabs/Game
 
 **This MBC5 cartridge uses brand new M29F160 EEPROM chips and non-volatile FRAM.**
 
-This circuit board should cover most MBC5 games, and is able to make games up to 2 MB in size, that use up to 256 Kbit of RAM. It is fully compatible with both the <a href="https://www.gbxcart.com/">GBxCart RW</a> and sanni's <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR)</a> so you can transfer games and save files to and from the board
+This circuit board should cover most MBC5 games, and is able to make games up to 2 MB in size, that use up to 256 Kbit of RAM. It is fully compatible with both the <a href="https://www.gbxcart.com/">GBxCart RW</a> and sanni's <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR)</a> so you can transfer games and save files to and from the board.
 
 ![image](https://github.com/user-attachments/assets/18a670f6-5a31-437a-9dec-4b41ad881639)
 
