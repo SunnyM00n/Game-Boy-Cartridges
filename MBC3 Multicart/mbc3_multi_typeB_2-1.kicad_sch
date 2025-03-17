@@ -5617,6 +5617,14 @@
 		(uuid "10834b70-a718-41e8-8887-e20516605a1e")
 	)
 	(no_connect
+		(at 96.52 33.02)
+		(uuid "7ac6ae0d-31d3-4950-86dd-166373fc5a6a")
+	)
+	(no_connect
+		(at 175.26 62.23)
+		(uuid "a90751ee-e415-4fb8-a5f9-9f84614a7771")
+	)
+	(no_connect
 		(at 31.75 134.62)
 		(uuid "ae611451-3e3a-4a50-8df1-d50b0432b0e6")
 	)

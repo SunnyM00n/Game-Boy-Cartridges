@@ -2241,6 +2241,17 @@
 			(thermal_bridge_angle 0)
 			(uuid "e36bf2c9-b464-4299-bfe3-b14ff79f5d2f")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/CAS-220TA--3DModel-STEP-556969.STEP"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
+		)
 	)
 	(footprint "Bucketmouse:TSSOP-14_4.4x5mm_P0.65mm"
 		(layer "F.Cu")
@@ -4406,6 +4417,17 @@
 			(thermal_bridge_angle 0)
 			(uuid "afcb687d-cb5e-4361-8f61-3e75016073df")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Package_QFP.3dshapes/TQFP-32_7x7mm_P0.8mm.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
+		)
 	)
 	(footprint "Bucketmouse:R_0603_1608Metric_Boxed"
 		(layer "F.Cu")
@@ -5333,6 +5355,17 @@
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
 			(uuid "7c241805-c9a6-43ae-a7eb-a8815318c343")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_PTS647Sx70.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1.2 1.2 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
 		)
 	)
 	(footprint "Bucketmouse:GBC_CART_TABBED"
@@ -7791,6 +7824,17 @@
 			(thermal_bridge_angle 0)
 			(uuid "50846984-60f6-45e0-9c35-aa48c960cf6b")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Battery.3dshapes/CR-2032_F2N v1.step"
+			(offset
+				(xyz 0.5 0 0)
+			)
+			(scale
+				(xyz 0.9 1 0.9)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Bucketmouse:C_0603_1608Metric_Boxed"
 		(layer "F.Cu")
@@ -9314,6 +9358,17 @@
 			(thermal_bridge_angle 0)
 			(uuid "3bfe8e54-227a-4f6e-a195-279226c0389c")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-28W_7.5x17.9mm_P1.27mm.step"
+			(offset
+				(xyz 0.65 0 0)
+			)
+			(scale
+				(xyz 1.1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
+		)
 	)
 	(footprint "Bucketmouse:SOT-353_SC-70-5"
 		(layer "F.Cu")
@@ -9757,6 +9812,17 @@
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
 			(uuid "2b470b8d-30cc-416c-ad20-27db3c6e63c9")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Crystal.3dshapes/Crystal_Round_D1.5mm_Vertical.step"
+			(offset
+				(xyz 0.925 3 0)
+			)
+			(scale
+				(xyz 1.1 1 1.4)
+			)
+			(rotate
+				(xyz -90 0 180)
+			)
 		)
 	)
 	(footprint "Bucketmouse:C_0603_1608Metric_Boxed"
@@ -10448,6 +10514,17 @@
 			(thermal_bridge_angle 0)
 			(uuid "68d8ca57-dcee-48a5-8303-2812fdd69cfe")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/CAS-220TA--3DModel-STEP-556969.STEP"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
+		)
 	)
 	(footprint "Bucketmouse:TSOP-I-40_18.4x12mm_P0.5mm_1"
 		(layer "F.Cu")
@@ -11095,7 +11172,7 @@
 			(pintype "input")
 			(uuid "09aed284-9e7f-438b-9fa3-4883392f60bc")
 		)
-		(model "${KICAD7_3DMODEL_DIR}/Gekkio_Package_SO.3dshapes/TSOP-I-48_18.4x12mm_P0.5mm.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/TSOP-I-40_18.4x10mm_P0.5mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
