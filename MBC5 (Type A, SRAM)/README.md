@@ -11,7 +11,7 @@ This circuit board should cover most MBC5 games. The features are as follows:
 - The option to add battery backup to the cartridge *without* the need of the original battery management ICs - perfect for MBC5 donors that didn't have batteries in them
 - Fully compatible with both the <a href="https://www.gbxcart.com/">GBxCart RW</a> and sanni's <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR)</a> so you can transfer games and save files to and from the board
 
-![image](https://github.com/user-attachments/assets/757c7675-5381-433f-9f70-53d1241c55a8)
+![image](https://github.com/user-attachments/assets/1934c741-f0d4-4c66-a43a-8c9aae064ad6)
 
 All gerbers and source files can be found in this repo, as this project is fully open source **with attribution.**
 
