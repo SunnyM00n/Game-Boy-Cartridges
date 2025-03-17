@@ -1652,6 +1652,17 @@
 			(thermal_bridge_angle 0)
 			(uuid "9fad3db1-ee6c-46a3-aca2-d7892a902de0")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Package_QFP.3dshapes/TQFP-32_7x7mm_P0.8mm.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
+		)
 	)
 	(footprint "Bucketmouse:C_0603_1608Metric_Boxed"
 		(layer "F.Cu")
@@ -3208,6 +3219,17 @@
 			(thermal_bridge_angle 0)
 			(uuid "723fc1bf-ec93-46c4-841b-fc81a0d1812f")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/CAS-220TA--3DModel-STEP-556969.STEP"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
+		)
 	)
 	(footprint "Bucketmouse:CR2025"
 		(layer "F.Cu")
@@ -3335,6 +3357,17 @@
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
 			(uuid "1937a0ac-7796-4500-a17d-7e5284a84271")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Battery.3dshapes/CR-2032_F2N v1.step"
+			(offset
+				(xyz 0.5 0 0)
+			)
+			(scale
+				(xyz 0.9 1 0.9)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
 		)
 	)
 	(footprint "Bucketmouse:SOT-23"
@@ -8520,6 +8553,17 @@
 			(thermal_bridge_angle 0)
 			(uuid "5c5337c0-9379-40af-83fa-7726da4d9f8a")
 		)
+		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SSOP-32_11.305x20.495mm_P1.27mm.wrl"
+			(offset
+				(xyz -0.65 -1.3 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
+		)
 	)
 	(footprint "Bucketmouse:CAS-D20A"
 		(layer "F.Cu")
@@ -8700,6 +8744,17 @@
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
 			(uuid "d9798722-8e51-493d-9296-b63da7e67c5f")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/CAS-220TA--3DModel-STEP-556969.STEP"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
 		)
 	)
 	(footprint "Bucketmouse:C_0603_1608Metric_Boxed"
@@ -8974,7 +9029,7 @@
 			)
 		)
 		(property "Value" "29F033"
-			(at 0 6.95 -90)
+			(at 0 6.95 90)
 			(layer "F.Fab")
 			(uuid "c64b84a7-69b6-453e-a5d9-832ff4efaaa0")
 			(effects
@@ -9192,7 +9247,7 @@
 			(uuid "4f01e556-9a36-44e0-95b1-e423a2cf5a22")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 -90)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "d1efa5cc-fd51-4f53-bd2a-ade924627faf")
 			(effects
@@ -9602,7 +9657,7 @@
 			(pintype "input")
 			(uuid "27d46793-15fe-46b2-bb7a-c39ad4410519")
 		)
-		(model "${KICAD7_3DMODEL_DIR}/Gekkio_Package_SO.3dshapes/TSOP-I-48_18.4x12mm_P0.5mm.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/TSOP-I-40_18.4x10mm_P0.5mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10725,6 +10780,17 @@
 			(solder_mask_margin 0.1016)
 			(thermal_bridge_angle 0)
 			(uuid "de226e07-097e-43f4-920e-013142799cee")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_PTS647Sx70.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1.2 1.2 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
 		)
 	)
 	(footprint "Bucketmouse:C_0603_1608Metric_Boxed"
