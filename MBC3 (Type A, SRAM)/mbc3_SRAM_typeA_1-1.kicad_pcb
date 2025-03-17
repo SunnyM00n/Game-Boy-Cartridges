@@ -116,7 +116,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "mbc3_SRAM_typeA_1-0_GERBERS/")
+			(outputdirectory "mbc3_SRAM_typeA_1-1_GERBERS/")
 		)
 	)
 	(net 0 "")
@@ -1284,7 +1284,7 @@
 		(path "/f1d7c0c0-b412-43c8-8fa4-c42a030b5e76")
 		(sheetname "Root")
 		(sheetfile "mbc3_SRAM_typeA_1-0.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start -11.2 6.25)
 			(end -11.2 -6.25)
