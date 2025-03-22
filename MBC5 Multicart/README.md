@@ -4,6 +4,8 @@
 
 This is a slightly updated design of my original flashable MBC5-based multicart for the Game Boy. You can make a 2-in-1 or 4-in-1 cartridge, that changes games based on a button press or power cycling the Game Boy. With this board you can also make a single game, but with the addition of a pressable reset button on the cartridge.
 
+**This MBC5 cartridge uses new old stock 29F033 EEPROM chips and battery-backed SRAM.**
+
 The features are as follows:
 
 - Able to make a cartridge with either 2x 2 MB games or 4x 1 MB games
