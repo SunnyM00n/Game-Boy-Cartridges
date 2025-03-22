@@ -232,7 +232,7 @@ If you want a Bucket Mouse branded label for your cartridge, look no further tha
 
 ![image](https://github.com/MouseBiteLabs/Game-Boy-MBC5-Multicart/assets/97127539/3a4cd3d5-f683-40e3-acfb-1b8c549bb1bb)
 
-### Why not FRAM?
+## Why not FRAM?
 
 This particular board is designed for using low retention power SRAM, or Static RAM. One downside to SRAM is that you need a battery to keep the SRAM powered on even when the game is turned off if you want to retain the data on the chip. So eventually the battery will die, and your save data will be lost.
 
@@ -253,6 +253,7 @@ In contrast, *brand new* quality SRAM chips are ~$3, and you can even save that 
 - Fixed issue with previous design where SW2A being in the OFF position caused excess save battery drain
 - Added board number to the top of the board
 - Updated silkscreen and cartridge style to match my other Game Boy cartridges
+- Removed R8, made EEPROM writable via the /WR pin on the cart edge
 
 ### v1.3
 - Fixed debounce circuit for push button
