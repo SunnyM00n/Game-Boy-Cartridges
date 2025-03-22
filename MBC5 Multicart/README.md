@@ -249,6 +249,9 @@ In contrast, *brand new* quality SRAM chips are ~$3, and you can even save that 
 
 ## Revision History
 
+### v2.1
+- Removed triangle on silkscreen from U8
+
 ### v2.0
 - Fixed issue with previous design where SW2A being in the OFF position caused excess save battery drain
 - Added board number to the top of the board
