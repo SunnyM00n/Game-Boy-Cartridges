@@ -129,17 +129,36 @@ If you're having trouble fitting the circuit board into a shell, because the tab
 
 ## Bill of Materials (BOM)
 
-| Reference | Value/Part Number | Package | Description      | Source                                           |
-| --------- | ----------------- | ------- | ---------------- | ------------------------------------------------ |
-| C19       | 0.1u              | 0603    | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| C20       | 0.1u              | 0603    | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| C21       | 0.1u              | 0603    | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| C22       | 0.1u              | 0603    | Capacitor (MLCC) | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
-| R17       | 10k               | 0603    | Resistor         | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
-| U7        | M29F160           | TSOP-48 | Flash EEPROM     | [https://mou.sr/3MNWQ0b](https://mou.sr/3MNWQ0b) |
-| U8        | MBC5              | QFP-32  | MBC5 Mapper      | Donor Game Boy Game                              |
-| U9        | FM18W08-SG        | SOIC-28 | FRAM             | [https://mou.sr/4cRIJlb](https://mou.sr/4cRIJlb) |
-| U10       | SN74LVC1G332      | SOT-363 | 3-input Or Gate  | [https://mou.sr/3XdbXoN](https://mou.sr/3XdbXoN) |
+Your parts list will vary depending on the game you are trying to make, and what chips you have for the battery management (if any). **You cannot use both U4 and U5 - you must choose one or the other.** U4 comes from a donor cartridge, and U5 is a readily available aftermarket option.
+
+Please carefully review the parts you need for the board you are trying to make. Do not add any parts to your build that don't appear in the column for the game you are making. This means you cannot populate every component on the board at the same time.
+
+**NOTE: If you are not using the RTC function of the MBC3, you need to bridge the pads of Z1 (or C3) with solder, and you do not need to include the battery.**
+
+| Reference Designators | Value/Part Number              | Package          | Description        | No RTC         | RTC carts with U4  | RTC carts without U4  | Source                                           |
+| --------------------- | ------------------------------ | ---------------- | ------------------ | -------------  | ------------------ | --------------------- | ------------------------------------------------ |
+| B1                    | CR2032, CR2025, CR2016         | CR2032           | Backup Battery     |                | x                  | x                     | [https://mou.sr/3SeAzfT](https://mou.sr/3SeAzfT) |
+| C19                   | 0.1uF                          | 0603             | Capacitor (MLCC)   | x              | x                  | x                     | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C36                   | 15pF                           | 0603             | Capacitor (MLCC)   |                | x                  | x                     | https://mou.sr/3PPorjO                           |
+| Z1                    | 15pF                           | 0603             | Capacitor (MLCC)   |                | x                  | x                     | https://mou.sr/3PPorjO                           |
+| C20                   | 0.1uF                          | 0603             | Capacitor (MLCC)   | x              | x                  | x                     | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C21                   | 0.1uF                          | 0603             | Capacitor (MLCC)   | x              | x                  | x                     | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C22                   | 0.1uF                          | 0603             | Capacitor (MLCC)   | x              | x                  | x                     | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C34                   | 0.1uF                          | 0603             | Capacitor (MLCC)   |                | x                  |                       | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| C35                   | 0.1uF                          | 0603             | Capacitor (MLCC)   |                |                    | x                     | [https://mou.sr/3ENc15O](https://mou.sr/3ENc15O) |
+| Q3                    | 2N7002                         | SOT-23           | N-Channel FET      | If MBC3 no rev | If MBC3 no rev     | x                     | [https://mou.sr/3rgfh6J](https://mou.sr/3rgfh6J) |
+| R17                   | 10k                            | 0603             | Resistor           | x              | x                  | x                     | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
+| R29                   | 130k                           | 0603             | Resistor           |                |                    | x                     | [https://mou.sr/3MjXliy](https://mou.sr/3MjXliy) |
+| R30                   | 49.9k                          | 0603             | Resistor           |                |                    | x                     | https://mou.sr/3Q3NRZO                           |
+| R31                   | 10k                            | 0603             | Resistor           |                | x                  | x                     | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
+| R32                   | 330k                           | 0603             | Resistor           |                | x                  | x                     | [https://mou.sr/3PZ2pvj](https://mou.sr/3PZ2pvj) |
+| U7                    | M29F160                        | TSOP-48          | Flash EEPROM       | x              | x                  | x                     | [https://mou.sr/3N0a9eL](https://mou.sr/3N0a9eL) |
+| U8                    | MBC3                           | QFP-32           | MBC3 Mapper        | x              | x                  | x                     | Donor MBC3 Game Boy cartridge                    |
+| U9                    | FM18W08-SG                     | SOIC-28          | FRAM               | x              | x                  | x                     | [https://mou.sr/4cRIJlb](https://mou.sr/4cRIJlb) |
+| U10                   | SN74LVC1G332                   | SOT-363          | 3-input Or Gate    | x              | x                  | x                     | [https://mou.sr/3XdbXoN](https://mou.sr/3XdbXoN) |
+| U14                   | MM1026, MM1134, BA6129, BA6735 | SOIC-8           | Battery Management |                | x                  |                       | Donor Game Boy cartridge                         |
+| U15                   | TPS3613                        | MSOP-10          | Battery Management |                |                    | x                     | [https://mou.sr/45Ir2kh](https://mou.sr/45Ir2kh) |
+| X3                    | 32.768 kHz                     | Radial           | Crystal Oscillator |                | x                  | x                     | https://mou.sr/3ZteKuy                           |
 
 ## Labels
 
