@@ -145,7 +145,7 @@ If you're having trouble fitting the circuit board into a shell, because the tab
 
 If you want a Bucket Mouse branded label for your cartridge, look no further than <a href="https://krizdingus.com/mousebitelabs/">krizdingus's designs</a>. Special thanks to Kris for designing these, they look awesome! (If you are going to order/print these, use the high-res images hosted on his website, and *keep the labels for personal or non-commercial use only.*)
 
-![image](https://github.com/MouseBiteLabs/Game-Boy-MBC5-Cartridge/assets/97127539/6ff3c8ef-356c-4162-9782-bd76befa0928)
+![image](https://github.com/MouseBiteLabs/Game-Boy-MBC3-Cartridge/assets/97127539/cafe3d48-8019-40c0-ab70-6fd012d93657)
 
 ## Revision History
 
