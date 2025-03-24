@@ -1,7 +1,5 @@
 # Game Boy MBC3 Multicart
 
-# UNDER CONSTRUCTION
-
 This is a slightly updated design of my original flashable MBC3-based multicart for the Game Boy. You can make a 2-in-1 or 4-in-1 cartridge, that changes games based on a button press or power cycling the Game Boy. With this board you can also make a single game, but with the addition of a pressable reset button on the cartridge.
 
 **This MBC3 cartridge uses new old stock 29F033 EEPROM chips and battery-backed SRAM.**
@@ -58,9 +56,9 @@ The zipped folder contains all the gerber files for this board. The following op
 
 You can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go twoards future PCB orders of my own):
 
-<a href="https://www.pcbway.com"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
+<a href="https://www.pcbway.com/project/shareproject/Game_Boy_MBC3_Multicart_Updated_929c9a0f.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
-<a href="https://oshpark.com/">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
+<a href="https://oshpark.com/shared_projects/x4BEUpR4">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
 
 ## Required Equipment
 
