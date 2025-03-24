@@ -26,7 +26,6 @@ DO NOT use my circuit boards for profiting from stolen work - this especially in
 The zipped folder contains all the gerber files for this board. The following options **must** be chosen when ordering boards for yourself.
 
 - Thickness: 0.8mm
-- Layers: 2
 - Surface Finish: ENIG
 - Gold Fingers: Yes, 30° chamfer
 
