@@ -284,7 +284,6 @@ In contrast, *brand new* quality SRAM chips are ~$3, and you can even save that 
 - Some components from <a href="https://github.com/adafruit/Adafruit-Eagle-Library">Adafruit's Eagle parts library</a>
 - Some components from <a href="https://www.snapeda.com/">SnapMagic</a>
 - Thank you to <a href="https://github.com/Gekkio">gekkio</a> for their deep Game Boy knowledge resources, and for collaboration in demystifying some of the design choices on Game Boy cartridges
-- Thanks to the awesome members of the <a href="https://moddedgameboy.club/">Modded Gameboy Club</a> for their feedback and support during the entire project development
 
 ## License
 
