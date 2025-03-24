@@ -1,4 +1,4 @@
-# MBC3 (Type A, FRAM)
+# Game Boy MBC3 Cartridge - Type A, FRAM
 
 # UNDER CONSTRUCTION
 
