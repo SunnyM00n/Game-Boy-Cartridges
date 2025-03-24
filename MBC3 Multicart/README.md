@@ -119,6 +119,8 @@ SW2, split into two separate switches SW2A (bottom half) and SW2B (top half), co
 | 3    | ON         | OFF           | Yes                     | Yes                            | Yes                    |
 | 4    | ON         | ON            | Yes                     | No                             | No                     |
 
+*Note: Mode 4 does not give function to the push button at all.*
+
 The "game change" method in this table describes how you advance down the "game" columns described in the table for SW3.
 
 ### Game and Save Data Configuration Switch (SW3)
