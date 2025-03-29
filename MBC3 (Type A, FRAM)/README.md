@@ -41,7 +41,7 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 <a href="https://www.pcbway.com/"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
-<a href="https://oshpark.com/">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
+<a href="https://oshpark.com/shared_projects/Hw9rGuT9">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
 
 ## Required Equipment
 
@@ -170,6 +170,7 @@ If you want a Bucket Mouse branded label for your cartridge, look no further tha
 
 ### v1.1
 - Added pin 1 indicator on silkscreen for U10
+- Fixed error where the FRAM and OR gate were powered on the battery (VSW) instead of VCC
 
 ### v1.0
 - Initial revision
