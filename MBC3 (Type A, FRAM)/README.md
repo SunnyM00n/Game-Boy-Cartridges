@@ -8,7 +8,7 @@ This is an alternate design of my <a href="https://github.com/MouseBiteLabs/Game
 
 This circuit board should cover most MBC3 games, and is able to make games up to 2 MB in size, that use up to 256 Kbit of RAM. It is fully compatible with both the <a href="https://www.gbxcart.com/">GBxCart RW</a> and sanni's <a href="https://github.com/sanni/cartreader">Open Source Cart Reader (OSCR)</a> so you can transfer games and save files to and from the board. Because of the FRAM this board utilizes, <a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/tree/main/MBC3%20(Type%20A%2C%20SRAM)#why-not-fram">it is technically only fully compatible with regular Game Boy games, and not Game Boy Color games,</a> though no issues have been reported in the past when using them with Game Boy Color games.
 
-![image](https://github.com/user-attachments/assets/701a1f31-d024-43f1-8530-0ebdaec0c32b)
+![image](https://github.com/user-attachments/assets/5f3d402f-e38b-403d-bb5d-2b4d497336ad)
 
 All gerbers and source files can be found in this repo, as this project is fully open source.
 
