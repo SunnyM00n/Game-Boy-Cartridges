@@ -1,6 +1,6 @@
 # Game Boy MBC3 Cartridge - Type A, FRAM
 
-# UNDER CONSTRUCTION
+# DESIGN IS UNVERIFIED (but probably ok)
 
 This is an alternate design of my <a href="https://github.com/MouseBiteLabs/Game-Boy-Cartridges/tree/main/MBC3%20(Type%20A%2C%20SRAM)">flashable MBC3-based cartridge for the Game Boy</a>. This board uses non-volatile FRAM instead of SRAM to hold save data. I made this specifically for use with the <a href="https://github.com/MouseBiteLabs/Super-Game-Boy-Plus/tree/main">Super Game Boy Plus boards.</a> Even though the board uses FRAM for the save data, the real-time clock data is stored on the MBC3 chip itself, and therefore a battery is included to keep the MBC3 powered on while the Game Boy is off, to keep the time in memory. If the battery dies, your save data will still be available on the FRAM chip, meaning swapping a dead battery to restore clock function will not risk any save data.
 
