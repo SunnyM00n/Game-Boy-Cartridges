@@ -16,6 +16,14 @@ This circuit board should cover most, if not all, MBC1 games. The features are a
 
 All gerbers and source files can be found in this repo, as this project is fully open source **with attribution**.
 
+## Important Version Note!
+
+An error with v1.0 boards does not let you flash games with the RAM set to 64K mode. Functionally, this means you cannot flash game ROMs larger than 512Kbit. I can find only one game that fits this category, so this should be a very minor issue.
+
+**You must put the cartridge in 256K SRAM mode in order to flash any game. Once your game is flashed, you can change the RAM mode back to 64K if you desire, but the games should function normally if you keep it in 256K mode.**
+
+Version 1.1 should fix this error, but it has not been tested yet. I am waiting for the order of boards to arrive so I may test it.
+
 ## Important Things Before You Start
 
 1) To use this board, you need to have an original Game Boy game that uses an MBC1 mapper chip. <a href="https://catskull.net/gb-rom-database/">You can find a list of games and their mappers here</a>. Use the search function. Please note the RAM is in bytes, not bits. Since SRAM in this repo is defined in bits, you need to convert by multiplying the number of bytes by 8.
@@ -43,7 +51,7 @@ You can use the zipped folder at any board fabricator you like. You may also buy
 
 <a href="https://www.pcbway.com/project/shareproject/Game_Boy_MBC1_Cartridge_M29F160_SRAM_d0423337.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
-<a href="https://oshpark.com/shared_projects/dfxoum1d">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
+<a href="https://oshpark.com/shared_projects/nTwQT1IF">The board is also listed on OSH Park as well.</a> **Be sure to get them in 0.8mm thickness if you order from here.**
 
 ## Required Equipment
 
@@ -73,6 +81,8 @@ The board comes with four sets of jumper pads for solder bridges. SJ1 and SJ2 re
 ### RAM Size Selection (SJ1/SJ2, or SW1)
 
 These two sets of pads are labelled "RAM SIZE" in the middle of the board. Soldering them will configure the max RAM *and* ROM size. You must configure these pads for every game you make - do not leave them empty (if you have no SRAM, solder to the "64K" setting to maximize ROM space). <a href="https://catskull.net/gb-rom-database/">You can find a list of games here with their respective ROM and RAM sizes.</a>
+
+**As stated earlier, on v1.0 boards, the RAM size selection must be in 256K mode to flash your ROM file.**
 
 - Solder bridge SJ1 and SJ2 from their middle pads to the top pads for games that have larger ROM sizes (up to 2 MB, or 16 Mbit of ROM, and up to 64 Kbit of RAM).
 
@@ -141,6 +151,7 @@ Please carefully review the parts you need for the board you are trying to make.
 | R5                    | 49.9k                          | 0603             | Resistor           |               | x                                | x                                | x                                | https://mou.sr/3Q3NRZO                           |
 | R6                    | 49.9k                          | 0603             | Resistor           |               | x                                | x                                | x                                | https://mou.sr/3Q3NRZO                           |
 | R7                    | 10k                            | 0603             | Resistor           |               |                                  | x                                |                                  | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
+| R8                    | 10k                            | 0603             | Resistor (v1.1 and later) | x      | x                                | x                                | x                                | [https://mou.sr/3riR7IH](https://mou.sr/3riR7IH) |
 | R9                    | 130k                           | 0603             | Resistor           |               |                                  |                                  | x                                | https://mou.sr/3MjXliy                           |
 | R10                   | 49.9k                          | 0603             | Resistor           |               |                                  |                                  | x                                | https://mou.sr/3Q3NRZO                           |
 | U1                    | M29F160                        | TSOP-48          | Flash EEPROM       | x             | x                                | x                                | x                                | [https://mou.sr/3N0a9eL](https://mou.sr/3N0a9eL) |
@@ -192,6 +203,9 @@ In contrast, *brand new* quality SRAM chips are ~$3, and you can even save that 
 FRAM carts definitely have their place and their benefits. But I personally prefer the SRAM design because I refuse to use AliExpress FRAM chips, and don't want to add a big cost with new FRAM.
 
 ## Revision History
+
+### v1.1
+- Fixed issue where programming in 64K RAM mode failed
 
 ### v1.0
 - Release revision
