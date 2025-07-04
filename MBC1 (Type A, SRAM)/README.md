@@ -18,9 +18,9 @@ All gerbers and source files can be found in this repo, as this project is fully
 
 ## Important Version Note!
 
-An error with v1.0 boards does not let you flash games with the RAM set to 64K mode. Functionally, this means you cannot flash game ROMs larger than 512Kbit. I can find only one game that fits this category, so this should be a very minor issue.
+An error with v1.0 boards does not let you flash games on an assembled cart with the RAM set to 64K mode. Functionally, this means you cannot flash game ROMs larger than 512Kbit. I can find only one game that fits this category, so this should be a very minor issue. 
 
-**You must put the cartridge in 256K SRAM mode in order to flash any game. Once your game is flashed, you can change the RAM mode back to 64K if you desire, but the games should function normally if you keep it in 256K mode.**
+**You must put the cartridge in 256K SRAM mode in order to flash any game using a cart flasher like the GBxCart. Once your game is flashed, you can change the RAM mode back to 64K if you desire, but the games should function normally if you keep it in 256K mode.** You can also flash the ROM to the M29F160 separately, and then solder it onto the board, to get around this issue.
 
 Version 1.1 should fix this error, but it has not been tested yet. I am waiting for the order of boards to arrive so I may test it.
 
@@ -82,7 +82,7 @@ The board comes with four sets of jumper pads for solder bridges. SJ1 and SJ2 re
 
 These two sets of pads are labelled "RAM SIZE" in the middle of the board. Soldering them will configure the max RAM *and* ROM size. You must configure these pads for every game you make - do not leave them empty (if you have no SRAM, solder to the "64K" setting to maximize ROM space). <a href="https://catskull.net/gb-rom-database/">You can find a list of games here with their respective ROM and RAM sizes.</a>
 
-**As stated earlier, on v1.0 boards, the RAM size selection must be in 256K mode to flash your ROM file.**
+**As stated earlier, on v1.0 boards, the RAM size selection must be in 256K mode to flash your ROM file with a cart flasher.**
 
 - Solder bridge SJ1 and SJ2 from their middle pads to the top pads for games that have larger ROM sizes (up to 2 MB, or 16 Mbit of ROM, and up to 64 Kbit of RAM).
 
