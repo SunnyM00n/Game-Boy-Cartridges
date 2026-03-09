@@ -20,7 +20,7 @@ All gerbers and source files can be found in this repo, as this project is fully
 
 An error with v1.0 boards does not let you flash games on an assembled cart with the RAM set to 64K mode. Functionally, this means you cannot flash game ROMs larger than 512Kbit. I can find only one game that fits this category, so this should be a very minor issue. 
 
-**You must put the cartridge in 256K SRAM mode in order to flash any game using a cart flasher like the GBxCart. Once your game is flashed, you can change the RAM mode back to 64K if you desire, but the games should function normally if you keep it in 256K mode.** You can also flash the ROM to the M29F160 separately, and then solder it onto the board, to get around this issue.
+**You must put the cartridge in 256K SRAM mode in order to flash any game using a cart flasher like the GBxCart. Once your game is flashed, change the RAM mode to 64K if your game requires it.** You can also flash the ROM to the M29F160 separately, and then solder it onto the board, to get around this issue.
 
 Version 1.1 should fix this error, but it has not been tested yet. I am waiting for the order of boards to arrive so I may test it.
 
