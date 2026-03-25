@@ -249,7 +249,7 @@ In contrast, *brand new* quality SRAM chips are ~$3, and you can even save that 
 - Removed triangle on silkscreen from U8
 
 ### v2.0
-- Fixed issue with previous design where SW2A being in the OFF position caused excess save battery drain
+- Fixed issue with previous design where SW2A being in the ON position caused excess save battery drain
 - Added board number to the top of the board
 - Updated silkscreen and cartridge style to match my other Game Boy cartridges
 - Removed R8, made EEPROM writable via the /WR pin on the cart edge
